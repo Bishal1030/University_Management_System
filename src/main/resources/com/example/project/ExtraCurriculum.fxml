@@ -2,14 +2,12 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:controller="com.example.project.ExtraCurriculumController"
-      xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER">
-    <Button text="Open Student Counseling Form" onAction="#handleOpenStudentCounselingForm"/>
-    <Button text="Open Student Report Form" onAction="#handleOpenStudentReportForm"/>
-    <Button text="Open Student Participation Form" onAction="#handleOpenStudentParticipationForm"/>
-    <VBox fx:id="mainVBox" spacing="10" alignment="CENTER"/>
-    <TextArea fx:id="outputArea" prefHeight="200" prefWidth="300"/>
+<VBox alignment="CENTER" prefHeight="561.0" prefWidth="891.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
+    <Button onAction="#handleOpenStudentCounselingForm" text="Open Student Counseling Form" />
+    <Button onAction="#handleOpenStudentReportForm" text="Open Student Report Form" />
+    <Button onAction="#handleOpenStudentParticipationForm" text="Open Student Participation Form" />
+    <VBox fx:id="mainVBox" alignment="CENTER" spacing="10" />
+    <TextArea fx:id="outputArea" prefHeight="184.0" prefWidth="599.0" />
 </VBox>

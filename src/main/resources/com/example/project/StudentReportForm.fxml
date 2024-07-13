@@ -5,10 +5,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.ExtraCurriculumController"
-      spacing="10" alignment="CENTER">
-    <TextField fx:id="studentIDField" promptText="Student ID"/>
-    <TextField fx:id="reportTitleField" promptText="Report Title"/>
-    <TextArea fx:id="reportContentArea" promptText="Report Content"/>
-    <Button text="Save" onAction="#handleSaveReportButton"/>
+<VBox alignment="CENTER" prefHeight="364.0" prefWidth="478.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
+    <TextField fx:id="studentIDField" promptText="Student ID" />
+    <TextField fx:id="reportTitleField" promptText="Report Title" />
+    <TextArea fx:id="reportContentArea" promptText="Report Content" />
+    <Button onAction="#handleSaveReportButton" text="Save" />
 </VBox>

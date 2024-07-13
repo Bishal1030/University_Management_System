@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.AnchorPane?>
+
 <?import javafx.scene.control.Button?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.HelloController">
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="368.0" prefWidth="327.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.HelloController">
     <children>
-        <Button text="Open Admin View" layoutX="50" layoutY="50" onAction="#loadAdminView"/>
-        <Button text="Open Staff View" layoutX="50" layoutY="100" onAction="#loadStaffView"/>
-        <Button text="Open Student View" layoutX="50" layoutY="150" onAction="#loadStudentView"/>
-        <Button text="Open Teacher View" layoutX="50" layoutY="200" onAction="#loadTeacherView"/>
-        <Button text="Open Attendance View" layoutX="50" layoutY="250" onAction="#loadAttendanceView"/>
-        <Button text="Open ExtraCurriculum View" layoutX="50" layoutY="300" onAction="#loadExtraCurriculumView"/>
+        <Button layoutX="96.0" layoutY="60.0" onAction="#loadAdminView" text="Open Admin View" />
+        <Button layoutX="101.0" layoutY="102.0" onAction="#loadStaffView" text="Open Staff View" />
+        <Button layoutX="92.0" layoutY="146.0" onAction="#loadStudentView" text="Open Student View" />
+        <Button layoutX="92.0" layoutY="194.0" onAction="#loadTeacherView" text="Open Teacher View" />
+        <Button layoutX="82.0" layoutY="243.0" onAction="#loadAttendanceView" text="Open Attendance View" />
+        <Button layoutX="70.0" layoutY="290.0" onAction="#loadExtraCurriculumView" text="Open ExtraCurriculum View" />
     </children>
 </AnchorPane>

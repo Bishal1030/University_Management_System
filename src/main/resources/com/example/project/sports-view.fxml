@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.AnchorPane?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.ExtraCurriculumController">
+<AnchorPane prefHeight="522.0" prefWidth="520.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
     <children>
-        <TextField fx:id="studentIDField" layoutX="50" layoutY="50" promptText="Student ID"/>
-        <CheckBox fx:id="sportsCheckbox" layoutX="50" layoutY="100" text="Participation in Sports"/>
-        <Button text="Save Sports Participation" layoutX="50" layoutY="150" onAction="#handleSaveSportsButton"/>
-        <Button text="Load Sports Participation" layoutX="200" layoutY="150" onAction="#handleLoadSportsButton"/>
-        <TextArea fx:id="outputArea" layoutX="50" layoutY="200" prefWidth="400" prefHeight="200"/>
+        <TextField fx:id="studentIDField" layoutX="50" layoutY="50" promptText="Student ID" />
+        <CheckBox fx:id="sportsCheckbox" layoutX="50" layoutY="100" text="Participation in Sports" />
+        <Button layoutX="50" layoutY="150" onAction="#handleSaveSportsButton" text="Save Sports Participation" />
+        <Button layoutX="200" layoutY="150" onAction="#handleLoadSportsButton" text="Load Sports Participation" />
+        <TextArea fx:id="outputArea" layoutX="50" layoutY="200" prefHeight="200" prefWidth="400" />
     </children>
 </AnchorPane>
