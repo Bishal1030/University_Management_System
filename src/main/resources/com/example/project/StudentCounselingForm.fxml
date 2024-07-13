@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.ExtraCurriculumController" hgap="10" vgap="10">
+    <Label text="Student ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="studentIDField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Counselor Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="counselorNameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Counseling Date:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="counselingDateField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Counseling Notes:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextArea fx:id="counselingNotesArea" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button text="Save Counseling" onAction="#handleSaveCounselingButton" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+</GridPane>

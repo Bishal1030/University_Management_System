@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project.StudentController">
+
+    <children>
+        <Label layoutX="50" layoutY="20" text="Student ID:"/>
+        <TextField fx:id="studentIDField" layoutX="150" layoutY="20"/>
+
+        <Label layoutX="50" layoutY="50" text="First Name:"/>
+        <TextField fx:id="firstNameField" layoutX="150" layoutY="50"/>
+
+        <Label layoutX="50" layoutY="80" text="Last Name:"/>
+        <TextField fx:id="lastNameField" layoutX="150" layoutY="80"/>
+
+        <Label layoutX="50" layoutY="110" text="Faculty:"/>
+        <TextField fx:id="facultyField" layoutX="150" layoutY="110"/>
+
+        <Label layoutX="50" layoutY="140" text="Email:"/>
+        <TextField fx:id="emailField" layoutX="150" layoutY="140"/>
+
+        <Label layoutX="50" layoutY="170" text="Gender:"/>
+        <TextField fx:id="genderField" layoutX="150" layoutY="170"/>
+
+        <Label layoutX="50" layoutY="200" text="Phone:"/>
+        <TextField fx:id="phoneField" layoutX="150" layoutY="200"/>
+
+        <Label layoutX="50" layoutY="230" text="Username:"/>
+        <TextField fx:id="usernameField" layoutX="150" layoutY="230"/>
+
+        <Label layoutX="50" layoutY="260" text="Password:"/>
+        <PasswordField fx:id="passwordField" layoutX="150" layoutY="260" promptText="Enter Password"/>
+
+        <Button layoutX="50" layoutY="300" text="Save Student" onAction="#handleSaveStudentButton"/>
+        <Button layoutX="150" layoutY="300" text="Load Students" onAction="#handleLoadStudentsButton"/>
+
+        <TextArea fx:id="outputArea" layoutX="50" layoutY="350" prefWidth="400" prefHeight="200"/>
+
+    </children>
+
+</AnchorPane>

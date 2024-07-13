@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.HelloController">
+    <children>
+        <Button text="Open Admin View" layoutX="50" layoutY="50" onAction="#loadAdminView"/>
+        <Button text="Open Staff View" layoutX="50" layoutY="100" onAction="#loadStaffView"/>
+        <Button text="Open Student View" layoutX="50" layoutY="150" onAction="#loadStudentView"/>
+        <Button text="Open Teacher View" layoutX="50" layoutY="200" onAction="#loadTeacherView"/>
+        <Button text="Open Attendance View" layoutX="50" layoutY="250" onAction="#loadAttendanceView"/>
+        <Button text="Open ExtraCurriculum View" layoutX="50" layoutY="300" onAction="#loadExtraCurriculumView"/>
+    </children>
+</AnchorPane>

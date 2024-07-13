@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.AdminController">
+    <children>
+        <Label layoutX="39.0" layoutY="27.0" text="Admin Management">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="78.0" text="Admin ID:" />
+        <TextField fx:id="adminIDField" layoutX="122.0" layoutY="78.0" promptText="Admin ID" />
+        <Label layoutX="39.0" layoutY="119.0" text="First Name:" />
+        <TextField fx:id="firstNameField" layoutX="122.0" layoutY="119.0" promptText="First Name" />
+        <Label layoutX="39.0" layoutY="160.0" text="Last Name:" />
+        <TextField fx:id="lastNameField" layoutX="122.0" layoutY="160.0" promptText="Last Name" />
+        <Label layoutX="39.0" layoutY="201.0" text="Email:" />
+        <TextField fx:id="emailField" layoutX="122.0" layoutY="201.0" promptText="Email" />
+        <Label layoutX="39.0" layoutY="242.0" text="Username:" />
+        <TextField fx:id="usernameField" layoutX="122.0" layoutY="242.0" promptText="Username" />
+        <Label layoutX="39.0" layoutY="283.0" text="Password:" />
+        <PasswordField fx:id="passwordField" layoutX="122.0" layoutY="283.0" promptText="Password" />
+        <Button layoutX="329.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleSaveAdminButton" text="Save" />
+        <Button layoutX="329.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleLoadAdminsButton" text="Load" />
+        <Button layoutX="329.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleUpdateAdminButton" text="Update" />
+        <Button layoutX="329.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleDeleteAdminButton" text="Delete Admin" />
+        <Button layoutX="329.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleDeleteStudentWithCredentialsButton" text="Delete Student" />
+        <Label layoutX="39.0" layoutY="324.0" text="Student ID to Delete:" />
+        <TextField fx:id="studentIDToDeleteField" layoutX="160.0" layoutY="321.0" promptText="Enter Student ID" />
+        <Label layoutX="39.0" layoutY="364.0" text="Student Details:" />
+        <TextArea fx:id="studentDetailsArea" layoutX="160.0" layoutY="364.0" prefHeight="60.0" prefWidth="400.0" promptText="Student Details Display" />
+        <TextArea fx:id="outputArea" layoutX="39.0" layoutY="430.0" prefHeight="135.0" prefWidth="523.0" />
+    </children>
+</AnchorPane>

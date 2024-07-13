@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.ExtraCurriculumController"
+      spacing="10" alignment="CENTER">
+    <TextField fx:id="studentIDField" promptText="Student ID"/>
+    <TextField fx:id="reportTitleField" promptText="Report Title"/>
+    <TextArea fx:id="reportContentArea" promptText="Report Content"/>
+    <Button text="Save" onAction="#handleSaveReportButton"/>
+</VBox>
