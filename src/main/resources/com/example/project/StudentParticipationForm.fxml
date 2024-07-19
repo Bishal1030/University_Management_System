@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="304.0" prefWidth="300.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
-    <TextField fx:id="studentIDField" prefHeight="26.0" prefWidth="283.0" promptText="Student ID" />
-    <TextField fx:id="sportNameField" promptText="Sport Name" />
-    <TextField fx:id="sportDateField" promptText="Sport Date" />
+<VBox alignment="CENTER" prefHeight="270.0" prefWidth="300.0" spacing="10" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ExtraCurriculumController">
+    <TextField fx:id="studentIDField" prefHeight="26.0" prefWidth="121.0" promptText="Student ID">
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding></TextField>
+    <TextField fx:id="sportNameField" promptText="Sport Name">
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding></TextField>
+    <TextField fx:id="sportDateField" promptText="Sport Date">
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding></TextField>
     <Button onAction="#handleSaveSportButton" text="Save" />
 </VBox>

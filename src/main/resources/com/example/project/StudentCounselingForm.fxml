@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<GridPane hgap="10" prefHeight="381.0" prefWidth="655.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
-    <Label text="Student ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <TextField fx:id="studentIDField" prefHeight="39.0" prefWidth="480.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-    <Label text="Counselor Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+<GridPane hgap="10" prefHeight="377.0" prefWidth="655.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ExtraCurriculumController">
+    <Label text="Student ID:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Label>
+    <TextField fx:id="studentIDField" prefHeight="39.0" prefWidth="481.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin></TextField>
+    <Label text="Counselor Name:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <GridPane.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Label>
     <TextField fx:id="counselorNameField" prefHeight="37.0" prefWidth="478.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-    <Label text="Counseling Date:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="Counseling Date:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+      <GridPane.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Label>
     <TextField fx:id="counselingDateField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-    <Label text="Counseling Notes:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Label alignment="CENTER_RIGHT" text="Counseling Notes:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </GridPane.margin>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding></Label>
     <TextArea fx:id="counselingNotesArea" GridPane.columnIndex="1" GridPane.rowIndex="3" />
     <Button onAction="#handleSaveCounselingButton" text="Save Counseling" GridPane.columnIndex="1" GridPane.rowIndex="4" />
    <columnConstraints>

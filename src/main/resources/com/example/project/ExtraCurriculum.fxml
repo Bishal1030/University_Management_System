@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="561.0" prefWidth="891.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
+<VBox alignment="CENTER" prefHeight="561.0" prefWidth="891.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ExtraCurriculumController">
     <Button onAction="#handleOpenStudentCounselingForm" text="Open Student Counseling Form" />
     <Button onAction="#handleOpenStudentReportForm" text="Open Student Report Form" />
     <Button onAction="#handleOpenStudentParticipationForm" text="Open Student Participation Form" />
     <VBox fx:id="mainVBox" alignment="CENTER" spacing="10" />
-    <TextArea fx:id="outputArea" prefHeight="184.0" prefWidth="599.0" />
+    <TextArea fx:id="outputArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0">
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin></TextArea>
 </VBox>

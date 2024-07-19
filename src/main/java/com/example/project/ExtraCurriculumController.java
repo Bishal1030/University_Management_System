@@ -109,6 +109,27 @@ public class ExtraCurriculumController {
     }
 
     @FXML
+    private void handleLoadReportButton() {
+        String studentID = studentIDField.getText();
+        if (studentID.isEmpty()) {
+            outputArea.appendText("Please enter a Student ID.\n");
+            return;
+        }
+
+        Optional<StudentReport> report = studentReportList.stream()
+                .filter(r -> r.getStudentID().equals(studentID))
+                .findFirst();
+
+        if (report.isPresent()) {
+            reportTitleField.setText(report.get().getTitle());
+            reportContentArea.setText(report.get().getContent());
+            outputArea.appendText("Report loaded for Student ID: " + studentID + "\n");
+        } else {
+            outputArea.appendText("No report found for Student ID: " + studentID + "\n");
+        }
+    }
+
+    @FXML
     private void handleSaveCounselingButton() {
         StudentCounseling counseling = getCounselingFromFields();
         if (counseling == null) {
@@ -124,12 +145,16 @@ public class ExtraCurriculumController {
 
     @FXML
     private void handleSaveReportButton() {
-        StudentReport report = getReportFromFields();
-        if (report == null) {
+        String studentID = studentIDField.getText();
+        String title = reportTitleField.getText();
+        String content = reportContentArea.getText();
+
+        if (studentID.isEmpty() || title.isEmpty() || content.isEmpty()) {
             outputArea.appendText("Please fill in all fields.\n");
             return;
         }
 
+        StudentReport report = new StudentReport(studentID, title, content);
         studentReportList.add(report);
         saveReportToFile();
         outputArea.appendText("Report saved: " + report.toString() + "\n");
@@ -295,8 +320,7 @@ public class ExtraCurriculumController {
         File file = new File(STUDENT_SPORTS_DATA_FILE);
         if (file.exists()) {
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(STUDENT_SPORTS_DATA_FILE))) {
-                studentSportsList = (List<StudentParticipationInSports>)
-                        ois.readObject();
+                studentSportsList = (List<StudentParticipationInSports>) ois.readObject();
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
             }

@@ -8,9 +8,10 @@
 <AnchorPane prefHeight="572.0" prefWidth="507.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.project.ExtraCurriculumController">
     <children>
         <TextField fx:id="studentIDField" layoutX="50" layoutY="50" promptText="Student ID" />
-        <TextArea fx:id="reportField" layoutX="50" layoutY="100" prefHeight="100" prefWidth="400" promptText="Report Details" />
-        <Button layoutX="50" layoutY="250" onAction="#handleSaveReportButton" text="Save Report" />
-        <Button layoutX="150" layoutY="250" onAction="#handleLoadReportButton" text="Load Report" />
-        <TextArea fx:id="outputArea" layoutX="50" layoutY="300" prefHeight="200" prefWidth="400" />
+        <TextField fx:id="reportTitleField" layoutX="50" layoutY="100" promptText="Report Title" />
+        <TextArea fx:id="reportContentArea" layoutX="50" layoutY="150" prefHeight="100" prefWidth="400" promptText="Report Content" />
+        <Button layoutX="50" layoutY="270" onAction="#handleSaveReportButton" text="Save Report" />
+        <Button layoutX="150" layoutY="270" onAction="#handleLoadReportButton" text="Load Report" />
+        <TextArea fx:id="outputArea" layoutX="50" layoutY="320" prefHeight="200" prefWidth="400" />
     </children>
 </AnchorPane>
